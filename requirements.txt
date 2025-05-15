@@ -4,4 +4,4 @@ tensorflow
 pillow
 numpy
 python-multipart
-gdowm
+gdown
