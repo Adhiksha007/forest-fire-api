@@ -1,7 +1,7 @@
 from fastapi import FastAPI, File, UploadFile
 from fastapi.responses import JSONResponse
 from tensorflow.keras.models import load_model
-from utils import preprocess_image
+from util import preprocess_image
 import numpy as np
 
 import os
