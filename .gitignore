@@ -1,0 +1,33 @@
+# 🚫 Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+
+# 🚫 Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# 🚫 Environment folders
+.env
+.venv/
+env/
+venv/
+ENV/
+
+# 🚫 Model files (ignore if loading from external source or it's large)
+*.h5
+*.keras
+*.pb
+
+# 🚫 OS-specific files
+.DS_Store
+Thumbs.db
+
+# 🚫 IDE/editor config folders
+.vscode/
+.idea/
+
+# 🚫 Logs
+*.log
+
+# 🚫 Build folders
+build/
+dist/
