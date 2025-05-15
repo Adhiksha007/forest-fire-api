@@ -4,6 +4,22 @@ from tensorflow.keras.models import load_model
 from utils import preprocess_image
 import numpy as np
 
+import os
+import gdown
+
+model_path = "model/fire_model.keras"
+file_id = "1CqmJjbIvV9xbj-jbImRSKMDnNgFq03dC"
+url = f"https://drive.google.com/uc?id={file_id}"
+
+# Create model directory if it doesn't exist
+os.makedirs("model", exist_ok=True)
+
+# Download the model if not present
+if not os.path.exists(model_path):
+    print("Downloading model from Google Drive...")
+    gdown.download(url, model_path, quiet=False)
+
+
 # Load model
 model = load_model('model/fire_model.keras')
 class_names = ["No Fire", "Fire"]
