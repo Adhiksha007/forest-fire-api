@@ -1,7 +1,7 @@
-fastapi
-uvicorn
-tensorflow-cpu==2.14.0
 pillow
-numpy
 python-multipart
 gdown
+tensorflow==2.15.0
+numpy==1.24.3
+uvicorn==0.22.0
+fastapi==0.110.0
