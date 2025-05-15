@@ -5,7 +5,7 @@ from utils import preprocess_image
 import numpy as np
 
 # Load model
-model = load_model('model/FFD.keras')
+model = load_model('model/fire_model.keras')
 class_names = ["No Fire", "Fire"]
 
 # FastAPI app
